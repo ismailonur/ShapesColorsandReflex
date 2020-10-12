@@ -8,6 +8,23 @@ TagManager:
   - sekil2
   - sekil3
   - sekil4
+  - karakter
+  - 4side
+  - 5side
+  - beveledStar
+  - cubie
+  - cubieBeveled
+  - cuboid
+  - diamondo
+  - diamondo5s
+  - hardStar
+  - heart
+  - hexgon
+  - penta
+  - softStar
+  - sphere
+  - sphereSmall
+  - spiral
   layers:
   - Default
   - TransparentFX

@@ -13,9 +13,13 @@ GameObject:
   - component: {fileID: 23000013546331654}
   - component: {fileID: 114000013818408240}
   - component: {fileID: -1142749679812689321}
+  - component: {fileID: 5646577882458872216}
+  - component: {fileID: -4323513864616688634}
+  - component: {fileID: -6963890527724322967}
+  - component: {fileID: -5637336979907160823}
   m_Layer: 0
   m_Name: Penta
-  m_TagString: Untagged
+  m_TagString: penta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +102,7 @@ MonoBehaviour:
   isFloating: 0
   isScaling: 0
   rotationAngle: {x: 0, y: 0, z: 10}
-  rotationSpeed: 10
+  rotationSpeed: 3
   floatSpeed: 0.04
   floatRate: 0.5
   startScale: {x: 1, y: 1, z: 1}
@@ -118,3 +122,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+--- !u!114 &5646577882458872216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010646675420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4e75ee6c2eba9438dff2dd1b4be7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4323513864616688634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010646675420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 391d98f7d6eeb634498f5dfbd9040c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &-6963890527724322967
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010646675420}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &-5637336979907160823
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010646675420}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0.00000017881393, y: -0.0000004321338, z: 0.11594781}
