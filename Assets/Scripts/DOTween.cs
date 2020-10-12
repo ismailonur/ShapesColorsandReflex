@@ -20,43 +20,49 @@ public class DOTween : MonoBehaviour
 
     void Move()
     {
-        switch(index)
+        switch (index)
         {
             case 0:
                 if (Input.GetKeyDown(KeyCode.D))
                 {
-                    gameObject.GetComponent<Transform>().DOLocalMoveX(-.7f, .5f);
+                    Vector2 pos = Camera.main.ViewportToWorldPoint(new Vector2(0.39f, 1f));
+                    gameObject.GetComponent<Transform>().DOLocalMoveX(pos.x, .5f);
                     index += 1;
                 }
                 break;
             case 1:
                 if (Input.GetKeyDown(KeyCode.A))
                 {
-                    gameObject.GetComponent<Transform>().DOLocalMoveX(-2f, .5f);
+                    Vector2 pos = Camera.main.ViewportToWorldPoint(new Vector2(0.1481481f, 1f));
+                    gameObject.GetComponent<Transform>().DOLocalMoveX(pos.x, .5f);
                     index--;
                 }
                 if (Input.GetKeyDown(KeyCode.D))
                 {
-                    gameObject.GetComponent<Transform>().DOLocalMoveX(.7f, .5f);
+                    Vector2 pos = Camera.main.ViewportToWorldPoint(new Vector2(0.62f, 1f));
+                    gameObject.GetComponent<Transform>().DOLocalMoveX(pos.x, .5f);
                     index += 1;
                 }
                 break;
             case 2:
                 if (Input.GetKeyDown(KeyCode.A))
                 {
-                    gameObject.GetComponent<Transform>().DOLocalMoveX(-.7f, .5f);
+                    Vector2 pos = Camera.main.ViewportToWorldPoint(new Vector2(0.39f, 1f));
+                    gameObject.GetComponent<Transform>().DOLocalMoveX(pos.x, .5f);
                     index--;
                 }
                 if (Input.GetKeyDown(KeyCode.D))
                 {
-                    gameObject.GetComponent<Transform>().DOLocalMoveX(2f, .5f);
+                    Vector2 pos = Camera.main.ViewportToWorldPoint(new Vector2(0.8518519f, 1f));
+                    gameObject.GetComponent<Transform>().DOLocalMoveX(pos.x, .5f);
                     index += 1;
                 }
                 break;
             case 3:
                 if (Input.GetKeyDown(KeyCode.A))
                 {
-                    gameObject.GetComponent<Transform>().DOLocalMoveX(.7f, .5f);
+                    Vector2 pos = Camera.main.ViewportToWorldPoint(new Vector2(0.62f, 1f));
+                    gameObject.GetComponent<Transform>().DOLocalMoveX(pos.x, .5f);
                     index--;
                 }
                 break;

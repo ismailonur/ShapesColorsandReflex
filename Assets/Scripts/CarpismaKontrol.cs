@@ -12,7 +12,7 @@ public class CarpismaKontrol : MonoBehaviour
     private void Awake()
     {
         karakterCreate = FindObjectOfType<KarakterCreate>();
-        Time.timeScale = 3;
+        Time.timeScale = 1;
     }
 
     void Start()
